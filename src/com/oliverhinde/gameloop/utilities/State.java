@@ -10,8 +10,6 @@ public abstract class State {
 
 	protected Manager sm;
 
-	public static int id;
-	
 	public abstract void update(float delta);
 	public abstract void draw(Graphics2D g, float delta, float fixedDelta);
 	public abstract void keyPressed(KeyEvent k);

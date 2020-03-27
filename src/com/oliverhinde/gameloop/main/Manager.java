@@ -5,7 +5,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
-import com.oliverhinde.gameloop.states.TestState;
 import com.oliverhinde.gameloop.utilities.Debug;
 import com.oliverhinde.gameloop.utilities.State;
 
@@ -14,12 +13,10 @@ public class Manager {
 	public Debug debug = new Debug();
 
 	private ArrayList<State> states;
-	private int currentState;
+	private int currentState = 0;
 	
 	public Manager() {
-		states = new ArrayList<State>();
-
-		currentState = TestState.id;
+		states = new ArrayList<>();
 	}
 
 	public void addNewState(State state) {
